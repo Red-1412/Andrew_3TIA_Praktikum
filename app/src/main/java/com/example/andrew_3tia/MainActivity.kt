@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
                 .setPositiveButton("Hapus") { dialog, _ ->
                     // proses hapus
                     dialog.dismiss()
-                    binding.txtUsername.setText("")
-                    binding.txtPassword.setText("")
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
                 }
                 .setCancelable(false)
                 .show()
