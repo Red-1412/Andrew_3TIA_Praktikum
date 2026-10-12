@@ -25,13 +25,13 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
-
-        val isLogin = sharedPref.getBoolean("isLogin", false)
-        if (isLogin) {
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-            return
-        }
+//
+//        val isLogin = sharedPref.getBoolean("isLogin", false)
+//        if (isLogin) {
+//            startActivity(Intent(this, MainActivity::class.java))
+//            finish()
+//            return
+//        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
