@@ -46,6 +46,7 @@
         app:layout_constraintVertical_bias="0.155" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:backgroundTint="@color/grey"
@@ -97,10 +98,10 @@
                 android:id="@+id/btntolima"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
                 android:fontFamily="@font/plusjakartasans_bold"
                 android:text="Pertemuan5"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -110,6 +111,35 @@
 
 
     </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:textColor="@color/white"
+        android:fontFamily="@font/plusjakartasans_bold"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/btntoenam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/plusjakartasans_bold"
+        android:text="Pertemuan6"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.414" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

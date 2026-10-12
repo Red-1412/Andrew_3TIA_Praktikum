@@ -4,5 +4,6 @@
     <color name="black_background">#81000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#CACACA</color>
+    <color name="red">#D31A1A</color>
 
 </resources>
