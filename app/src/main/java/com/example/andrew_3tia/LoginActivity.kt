@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
                 editor.putString("username", user)
                 editor.apply()
 
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, BaseActivity::class.java)
                 intent.putExtra("Extra_User",user)
                 intent.putExtra("Extra_Pass",pass)
                 startActivity(intent)

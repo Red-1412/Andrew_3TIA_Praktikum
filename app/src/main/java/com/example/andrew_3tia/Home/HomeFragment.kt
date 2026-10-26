@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.andrew_3tia.Home.pertemuan5.LimaActivity
 import com.example.andrew_3tia.Home.pertemuan6.EnamActivity
+import com.example.andrew_3tia.Home.pertemuan9.NinthActivity
 import com.example.andrew_3tia.LoginActivity
 import com.example.andrew_3tia.R
 import com.example.andrew_3tia.databinding.ActivityMainBinding
@@ -75,6 +76,11 @@ class HomeFragment : Fragment() {
         }
         binding.btntoenam.setOnClickListener {
             val intent = Intent(requireContext(), EnamActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btntoninth.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
         }
 

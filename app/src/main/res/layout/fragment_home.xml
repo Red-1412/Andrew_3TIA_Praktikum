@@ -6,11 +6,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Home.HomeFragment">
 
+    <View
+        android:id="@+id/background_header"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_header_wave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#0097A7"
+        android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:subtitleTextColor="@android:color/black"
@@ -26,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintVertical_bias="0.234" />
 
     <TextView
         android:id="@+id/txtPassword"
@@ -35,10 +44,10 @@
         android:text="Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintHorizontal_bias="0.349"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <TextView
         android:id="@+id/textView3"
@@ -66,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintVertical_bias="0.418"
         app:strokeColor="#2196F3"
         app:strokeWidth="3dp">
 
@@ -103,52 +112,76 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.121" />
 
-            <Button
-                android:id="@+id/btntolima"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:fontFamily="@font/plusjakartasans_bold"
-                android:text="Pertemuan5"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnalert" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </com.google.android.material.card.MaterialCardView>
 
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.0"
+        app:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btntolima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/plusjakartasans_bold"
+            android:text="Pertemuan5"
+            android:textColor="@color/white"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btntoenam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/plusjakartasans_bold"
+            android:text="Pertemuan6"
+            android:textColor="@color/white"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btntoninth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/plusjakartasans_bold"
+            android:text="Pertemuan9"
+            android:textColor="@color/white"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
     <Button
         android:id="@+id/btnlogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/plusjakartasans_bold"
         android:text="LogOut"
         android:textColor="@color/white"
-        android:fontFamily="@font/plusjakartasans_bold"
-        android:backgroundTint="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.06" />
-
-    <Button
-        android:id="@+id/btntoenam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/plusjakartasans_bold"
-        android:text="Pertemuan6"
-        android:textColor="@color/white"
+        app:layout_columnWeight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintTop_toBottomOf="@+id/gridMenu"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_gravity="fill_horizontal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
